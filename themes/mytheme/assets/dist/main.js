@@ -8171,9 +8171,9 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
-/***/ "./src/style.scss":
+/***/ "./src/index.scss":
 /*!************************!*\
-  !*** ./src/style.scss ***!
+  !*** ./src/index.scss ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -8247,7 +8247,7 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 // 全ての Bootstrap の名前付きエクスポート（named export）をインポート
  // スタイルシート（Sass）をインポート
 

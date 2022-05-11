@@ -2,4 +2,4 @@
 import * as bootstrap from 'bootstrap';
 
 // スタイルシート（Sass）をインポート
-import './style.scss';
+import './index.scss';

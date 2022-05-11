@@ -1,0 +1,18 @@
+/*
+Bootstrap の変数をここで上書きして Bootstrap のスタイルをカスタマイズ
+Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
+*/
+
+@import "../scss/foundation/base.scss";
+@import "../scss/foundation/variable.scss";
+@import "../scss/foundation/mixin.scss";
+
+@import "../scss/layout/l-header";
+@import "../scss/layout/l-footer";
+
+// @import "../scss/object/project/component/";
+// @import "../scss/object/project/utility/";
+// @import "../scss/object/project/";
+
+/* Bootstrap の Sass を読み込む */
+@import "~bootstrap/scss/bootstrap.scss";
