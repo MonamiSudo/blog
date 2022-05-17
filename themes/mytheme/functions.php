@@ -7,3 +7,4 @@ add_theme_support( 'post-thumbnails' );
 // ============================================================================================
 // テーマファイルまでのパス
 $theme_path = get_template_directory_uri();
+$img_path = $theme_path . '/assets/images';

@@ -12,6 +12,8 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 
 // @import "../scss/object/project/component/";
 // @import "../scss/object/project/utility/";
+@import "../scss/object/utility/u-img";
+@import "../scss/object/utility/u-wrapper";
 // @import "../scss/object/project/";
 
 /* Bootstrap の Sass を読み込む */
