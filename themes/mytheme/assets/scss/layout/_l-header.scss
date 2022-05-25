@@ -1,0 +1,11 @@
+.l-header {
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 0 24px;
+  }
+  &-wrapper {
+    height: 80px;
+  }
+}

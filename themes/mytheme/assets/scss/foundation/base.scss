@@ -1,0 +1,20 @@
+ul {
+  list-style: none !important;
+}
+
+html {
+  h1 {
+    font-size: 28px;
+  }
+  a {
+    color: $black;
+  }
+}
+
+@include mq(md) {
+  html {
+    h1 {
+      font-size: 36px;
+    }
+  }
+}

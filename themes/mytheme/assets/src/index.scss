@@ -3,9 +3,9 @@ Bootstrap の変数をここで上書きして Bootstrap のスタイルをカ�
 Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 */
 
-@import "../scss/foundation/base.scss";
 @import "../scss/foundation/variable.scss";
 @import "../scss/foundation/mixin.scss";
+@import "../scss/foundation/base.scss";
 
 @import "../scss/layout/l-header";
 @import "../scss/layout/l-footer";
@@ -14,7 +14,8 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 // @import "../scss/object/project/utility/";
 @import "../scss/object/utility/u-img";
 @import "../scss/object/utility/u-wrapper";
-// @import "../scss/object/project/";
+
+@import "../scss/object/project/toppage/p-fv";
 
 /* Bootstrap の Sass を読み込む */
 @import "~bootstrap/scss/bootstrap.scss";
