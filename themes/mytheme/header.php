@@ -4,7 +4,6 @@
     'container' => 'nav', // ul（ナビ）を何で囲むか
     'container_class' => 'l-header__nav', // ulの親のクラス
     'menu_class' => 'l-header__items', // ulのクラス
-
   );
 ?>
 

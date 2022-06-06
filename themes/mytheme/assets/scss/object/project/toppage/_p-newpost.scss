@@ -1,0 +1,13 @@
+.p-newpost {
+  &__img-layout {
+    height: 200px;
+  }
+}
+
+@include mq(md) {
+  .p-newpost {
+    &__img-layout {
+      height: 340px;
+    }
+  }
+}
