@@ -1,4 +1,4 @@
-.toppage {
+.top-page {
   .p-fv {
 
     &__img-layout {
@@ -19,7 +19,7 @@
 }
 
 @include mq(md) {
-  .toppage {
+  .top-page {
     .p-fv {
       &__img-layout {
         height: 80vh;

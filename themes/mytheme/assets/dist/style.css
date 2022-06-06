@@ -51,14 +51,14 @@ html a {
   width: 90%;
 }
 
-.toppage .p-fv__img-layout {
+.top-page .p-fv__img-layout {
   height: 60vh;
 }
-.toppage .p-fv__img-layout img {
+.top-page .p-fv__img-layout img {
   -o-object-position: 0% 28%;
      object-position: 0% 28%;
 }
-.toppage .p-fv__title {
+.top-page .p-fv__title {
   letter-spacing: 0.05em;
   top: 50%;
   margin-top: -84px;
@@ -67,10 +67,10 @@ html a {
 }
 
 @media screen and (min-width: 768px) {
-  .toppage .p-fv__img-layout {
+  .top-page .p-fv__img-layout {
     height: 80vh;
   }
-  .toppage .p-fv__title {
+  .top-page .p-fv__title {
     margin-top: -54px;
     margin-left: -150.665px;
   }
