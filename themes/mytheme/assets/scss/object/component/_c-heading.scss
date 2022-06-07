@@ -1,0 +1,23 @@
+.c-heading {
+  &__section {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 36px;
+      background-color: $body_black;
+      margin-right: 8px;
+      vertical-align: bottom;
+    }
+  }
+}
+
+@include mq(lg) {
+  .c-heading {
+    &__section {
+      &::before {
+        width: 8px;
+      }
+    }
+  }
+}

@@ -12,10 +12,14 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 
 // @import "../scss/object/project/component/";
 @import "../scss/object/component/c-btn";
+@import "../scss/object/component/c-heading";
 
 // @import "../scss/object/project/utility/";
 @import "../scss/object/utility/u-img";
 @import "../scss/object/utility/u-wrapper";
+
+@import "../scss/object/project/sidebar/p-sb-prof";
+@import "../scss/object/project/sidebar/p-sb-category";
 
 @import "../scss/object/project/toppage/p-fv";
 @import "../scss/object/project/toppage/p-newpost";
