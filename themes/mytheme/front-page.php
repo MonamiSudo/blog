@@ -26,7 +26,7 @@
 
         <section class="p-newpost py-10 py-md-15">
           <h1 class="c-heading__section mb-0">新着記事</h1>
-          <ul class="p-0 mt-4 mb-10">
+          <ul class="p-0 mt-6 mb-10">
             <?php 
               $args = array(
                 'post_type' => $post_type,
@@ -36,15 +36,20 @@
               $query = new WP_Query($args);
             
               if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+              // var_dump( $query->posts[0] );
+              var_dump( the_content() );
+              // var_dump( $query->posts->post_content );
             ?>
-            <li>
-              <a href="" class="text-decoration-none">
+            <li class="mb-4">
+              <a href="" class="text-decoration-none d-flex flex-column flex-md-row gap-md-6">
                 <figure class="u-img__cover p-newpost__img-layout">
                   <?php the_post_thumbnail(); ?>
                 </figure>
-                <h2><?php the_title(); ?></h2>
-                <p><?= get_the_date(); ?></p>
-                <p><?php the_content(); ?></p>
+                <div class="p-newpost__content">
+                  <h2><?php the_title(); ?></h2>
+                  <p><?= get_the_date(); ?></p>
+                  <p><?php the_content(); ?></p>
+                </div>
               </a>
             </li>
             <?php endwhile; endif; ?>

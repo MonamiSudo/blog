@@ -133,7 +133,11 @@ h4:18px
 
 @media screen and (min-width: 768px) {
   .p-newpost__img-layout {
-    height: 340px;
+    height: 180px;
+    width: 40%;
+  }
+  .p-newpost__content {
+    width: 60%;
   }
 }
 /* Bootstrap の Sass を読み込む */
