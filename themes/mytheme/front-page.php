@@ -20,7 +20,7 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row justify-content-between">
 
       <div class="col-12 col-lg-8">
 
@@ -36,9 +36,6 @@
               $query = new WP_Query($args);
             
               if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-              // var_dump( $query->posts[0] );
-              var_dump( the_content() );
-              // var_dump( $query->posts->post_content );
             ?>
             <li class="mb-4">
               <a href="" class="text-decoration-none d-flex flex-column flex-md-row gap-md-6">
@@ -46,15 +43,15 @@
                   <?php the_post_thumbnail(); ?>
                 </figure>
                 <div class="p-newpost__content">
-                  <h2><?php the_title(); ?></h2>
+                  <h2 class="fw-bold"><?php the_title(); ?></h2>
                   <p><?= get_the_date(); ?></p>
-                  <p><?php the_content(); ?></p>
+                  <p><?= wp_trim_words( get_the_content(), 80, '....【続きを読む】' ); ?></p>
                 </div>
               </a>
             </li>
             <?php endwhile; endif; ?>
           </ul>
-          <a href="/" class="c-btn py-4 px-3">他の新着記事をみる</a>
+          <a href="/" class="c-btn btn-secondary py-4 px-3">他の新着記事をみる</a>
         </section>
 
         <section class="p-pickup py-10 py-md-15">
@@ -63,7 +60,7 @@
 
       </div>
 
-      <div class="col-0 col-lg-4 mt-10 mt-md-15">
+      <div class="col-0 col-lg-3 mt-10 mt-md-15">
         <?php get_sidebar('profile'); ?>
         <?php get_sidebar('category'); ?>
       </div>

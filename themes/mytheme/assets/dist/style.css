@@ -51,13 +51,30 @@ h4:18px
 }
 
 .c-btn {
-  border: 1px solid #666;
-  color: #666;
   display: block;
   margin: auto;
   text-align: center;
   text-decoration: none;
   width: 80%;
+  transition: all 0.3s;
+}
+.c-btn__front {
+  font-size: 40px;
+}
+.c-btn__front:hover {
+  background-color: #fff;
+  color: #666;
+}
+
+.btn-secondary {
+  background-color: #666;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #fff !important;
+  border: 1px solid #666;
+  color: #666 !important;
 }
 
 .c-heading__section::before {

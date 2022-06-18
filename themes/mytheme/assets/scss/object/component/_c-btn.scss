@@ -1,9 +1,30 @@
 .c-btn {
-  border: 1px solid $gray;
-  color: $gray;
   display: block;
   margin: auto;
   text-align: center;
   text-decoration: none;
   width: 80%;
+  transition: all .3s;
+
+  &__front {
+    font-size: 40px;
+    &:hover {
+      background-color: $white;
+      color: $gray;
+    }
+  }
+}
+
+// =======================================================
+// bootstrap デフォルトボタンCSS書き換え
+// =======================================================
+.btn-secondary {
+  background-color: $gray;
+  border: 1px solid $white;
+  color: $white;
+  &:hover {
+    background-color: $white !important;
+    border: 1px solid $gray;
+    color: $gray !important;
+  }
 }
