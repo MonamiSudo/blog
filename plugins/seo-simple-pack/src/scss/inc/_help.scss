@@ -1,0 +1,18 @@
+
+/* help ページ */
+.ssp-helpTable {
+	width: 100%;
+	max-width: 560px;
+	margin: 0 0 24px;
+	// background: #fff;
+
+	thead {
+		background: #e3e4e3;
+	}
+
+	td,
+	th {
+		padding: 6px 8px;
+		text-align: left;
+	}
+}

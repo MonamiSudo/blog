@@ -1,25 +1,36 @@
-<?php 
+<!DOCTYPE html>
+<html lang="ja">
+<?php include( TEMPLATEPATH . '/components/head.php' ); ?>
+<body>
+  <?php include( TEMPLATEPATH . '/header.php' ); ?>
+  <?php 
 
 // $term = get_terms('genre');
 // var_dump($term);
 
-// $args = array(
-//   'post_type' => 'blog',
-//   'order' => 'ASC'
-// );
+$args = array(
+  'post_type' => 'blog',
+  'order' => 'ASC',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'genre',
+      'field' => 'slug',
+      'terms' => array( 'gadget' )
+    )
+  )
+);
 
-// $query = new WP_Query($args); 
+$the_query = new WP_Query($args); 
 
-// var_dump($query);
-
-if( have_posts() ) : while( have_posts() ) : the_post();
+if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
 ?>
-  <h2><?php the_title(); ?></h2>
-  <p><?php $post->ID ?></p>
-<?php
-endwhile; endif;
+  <a  href="<?= the_permalink(); ?>">
+    <h2 class="pt-15"><?php the_title(); ?></h2>
+  </a>
 
-print_r(get_queried_object());
+<?php
+endwhile; else : echo 'null'; endif;
+
 ?>
 
 <ul>
@@ -35,3 +46,6 @@ print_r(get_queried_object());
 <?php // endwhile; ?>
 
 </ul>
+<?php include( TEMPLATEPATH . '/components/footer.php' ); ?>
+</body>
+</html>
