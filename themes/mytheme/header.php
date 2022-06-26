@@ -7,9 +7,9 @@
   );
 ?>
 
-<header class="l-header position-fixed w-100 bg-white">
+<header class="l-header shadow-sm position-fixed w-100 bg-white">
   <div class="u-wrapper__1152 l-header-wrapper d-flex align-items-center justify-content-between">
-    <h1 class="mb-0">きぬおブログ</h1>
+    <h1 class="mb-0">ホーム</h1>
     <?php 
       wp_nav_menu($nav_args);
     ?>

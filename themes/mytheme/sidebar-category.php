@@ -42,11 +42,3 @@
 
   </ul>
 </section>
-
-<!-- <section class="mt-10">
-  <h1>記事カテゴリ一覧</h1>
-  <ul>
-    <li class="">フェイスケア</li>
-    <li class="">ゴリゴリ</li>
-  </ul>
-</section> -->
