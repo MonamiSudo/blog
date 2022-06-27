@@ -1,0 +1,44 @@
+.l-header-sp {
+
+  &__lines {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+  }
+
+  &__line {
+    background-color: $white;
+    height: 48px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+
+    &-element {
+
+      &::before {
+        background: #000;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 32px;
+        position: absolute;
+        top: 12px;
+        left: 15px;
+      }
+
+      &.line2 {
+        &::before {
+          top: 22px;
+        }
+      }
+
+      &.line3 {
+        &::before {
+          top: 32px;
+        }
+      }
+
+    }
+
+  }
+}

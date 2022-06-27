@@ -7,7 +7,7 @@
   );
 ?>
 
-<header class="l-header shadow-sm position-fixed w-100 bg-white">
+<header class="l-header d-none d-lg-block shadow-sm position-fixed w-100 bg-white">
   <div class="u-wrapper__1152 l-header-wrapper d-flex align-items-center justify-content-between">
     <h1 class="mb-0">ホーム</h1>
     <?php 
@@ -15,3 +15,15 @@
     ?>
   </div>
 </header>
+
+<!-- ハンバーガーメニュー -->
+
+<section class="l-header-sp">
+  <ul class="l-header-sp__lines m-0">
+    <li class="l-header-sp__line shadow-sm">
+      <span class="l-header-sp__line-element"></span>
+      <span class="l-header-sp__line-element line2"></span>
+      <span class="l-header-sp__line-element line3"></span>
+    </li>
+  </ul>
+</section>

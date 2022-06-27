@@ -50,6 +50,35 @@ h4:18px
   height: 80px;
 }
 
+.l-header-sp__lines {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+.l-header-sp__line {
+  background-color: #fff;
+  height: 48px;
+  width: 60px;
+  position: absolute;
+  right: 0;
+}
+.l-header-sp__line-element::before {
+  background: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 32px;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+.l-header-sp__line-element.line2::before {
+  top: 22px;
+}
+.l-header-sp__line-element.line3::before {
+  top: 32px;
+}
+
 .c-btn {
   display: block;
   margin: auto;
