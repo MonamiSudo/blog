@@ -106,5 +106,6 @@
   </div>
 
   <?php include( TEMPLATEPATH . '/components/footer.php' ); ?>
+
 </body>
 </html>
