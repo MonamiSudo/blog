@@ -20,11 +20,16 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 @import "../scss/object/utility/u-img";
 @import "../scss/object/utility/u-wrapper";
 
+// sidebar
 @import "../scss/object/project/sidebar/p-sb-prof";
 @import "../scss/object/project/sidebar/p-sb-category";
 
+// toppage
 @import "../scss/object/project/toppage/p-fv";
 @import "../scss/object/project/toppage/p-newpost";
+
+// taxonomy
+@import "../scss/object/project/taxonomy/p-taxonomy";
 
 /* Bootstrap の Sass を読み込む */
 @import "~bootstrap/scss/bootstrap.scss";
