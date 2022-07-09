@@ -1,17 +1,42 @@
 .p-taxonomy {
+
+  &__items {
+    gap: 40px 0;
+  }
+
+  &__item {
+    width: 48%;
+  }
   
   &-img {
 
     &__layout {
-      height: 232px;
+      height: 92px;
       width: 100%;
 
       & img {
         height: 100% !important;
         width: 100% !important;
-        object-fit: contain;
+        object-fit: cover;
       }
 
+    }
+
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #5c5c5c;
+  }
+
+}
+
+@include mq(md) {
+
+  .p-taxonomy {
+
+    &__item {
+      width: 31%;
     }
 
   }
