@@ -31,6 +31,9 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 @import "../scss/object/project/toppage/p-fv";
 @import "../scss/object/project/toppage/p-newpost";
 
+// single
+@import "../scss/object/project/single/p-single";
+
 // taxonomy
 @import "../scss/object/project/taxonomy/p-taxonomy";
 

@@ -10,7 +10,7 @@
 
   <?php get_header(); ?>
 
-  <section class="p-fv pt-md-20">
+  <section class="p-fv pt-lg-20">
     <div class="position-relative">
       <figure class="u-img__cover p-fv__img-layout mb-0">
         <img src="<?= $img_path ?>/toppage/fv-salon.jpg" alt="男性が美容院で髪を切っている">
@@ -33,7 +33,7 @@
               $args = array(
                 'post_type' => $post_type,
                 'order' => 'ASC',
-                'posts_per_page' => 5
+                'posts_per_page' => 3
               );
             
               $query = new WP_Query($args);

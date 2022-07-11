@@ -1,12 +1,26 @@
 .l-header {
   z-index: 10000;
+  display: none;
+
   &__items {
     display: flex;
     align-items: center;
+    padding-left: 0;
     margin-bottom: 0;
     gap: 0 24px;
+    
   }
+
   &-wrapper {
     height: 80px;
   }
+
+}
+
+@include mq(lg) {
+
+  .l-header {
+    display: block;
+  }
+
 }

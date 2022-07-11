@@ -1,8 +1,8 @@
 .l-header-sp {
-
+  // ハンバーガーライン
   &__lines {
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     right: 0;
   }
 
@@ -41,4 +41,39 @@
     }
 
   }
+
+  // ハンバーガーメニュー内側
+  &__menus {
+    display: none;
+    padding-top: 80px;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  &__items {
+    padding-left: 0;
+
+    & li:first-child a {
+      border-top: 1px solid $gray3;
+    }
+
+    & li a {
+      display: block;
+      padding: 16px 0 16px 8px;
+      width: 92%;
+      margin: 0 auto;
+      border-bottom: 1px solid $gray3;
+    }
+
+  }
+
+}
+
+@include mq(lg) {
+
+  .l-header-sp {
+    display: none;
+  }
+
 }

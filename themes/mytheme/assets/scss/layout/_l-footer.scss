@@ -10,19 +10,17 @@
     padding: 0;
     margin: 0;
 
-    & li {
-      border-top: 1px solid;
-      
-      &:last-child {
-        border-bottom: 1px solid;
-      }
-
+    & li:first-child a {
+      border-top: 1px solid $white;
     }
 
     & li a {
       color: $gray4;
       display: block;
       padding: 12px 0 12px 8px;
+      width: 92%;
+      margin: 0 auto;
+      border-bottom: 1px solid $white;
     }
 
   }
@@ -44,10 +42,16 @@
           border-bottom: none;
         }
 
+        &:first-child a {
+          border:  none;
+        }
+
       }
     
       & li a {
+        border: none;
         padding: 0;
+        width: 100%;
       }
 
     }
