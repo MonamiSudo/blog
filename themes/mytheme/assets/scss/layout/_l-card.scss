@@ -1,0 +1,49 @@
+.l-card {
+
+  &__item {
+    width: 48%;
+  }
+
+  &__img-layout {
+    height: 92px;
+  }
+
+  &__text {
+    display: none;
+    font-size: 13px;
+  }
+
+}
+
+@include mq(md) {
+
+  .l-card {
+
+    &__img-layout {
+      width: 50%;
+      height: 100px;
+    }
+
+    &__content {
+      width: 50%;
+    }
+
+  }
+
+}
+
+@include mq(lg) {
+
+  .l-card {
+
+    &__img-layout {
+      height: 120px;
+    }
+
+    &__text {
+      display: block;
+    }
+
+  }
+
+}

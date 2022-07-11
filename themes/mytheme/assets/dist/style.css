@@ -8,6 +8,7 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 */
 body {
   color: #3d3d3d;
+  font-family: "遊ゴシック", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 ul {
@@ -47,6 +48,34 @@ html h4, html .h4 {
   font-size: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  html h1, html .h1 {
+    font-size: 18px;
+  }
+  html h2, html .h2 {
+    font-size: 16px;
+  }
+  html h3, html .h3 {
+    font-size: 15px;
+  }
+  html h4, html .h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html h1, html .h1 {
+    font-size: 22px;
+  }
+  html h2, html .h2 {
+    font-size: 20px;
+  }
+  html h3, html .h3 {
+    font-size: 18px;
+  }
+  html h4, html .h4 {
+    font-size: 16px;
+  }
+}
 /*
 pc
 h1:28px
@@ -135,6 +164,34 @@ h4:18px
     padding: 0;
   }
 }
+.l-card__item {
+  width: 48%;
+}
+.l-card__img-layout {
+  height: 92px;
+}
+.l-card__text {
+  display: none;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-card__img-layout {
+    width: 50%;
+    height: 100px;
+  }
+  .l-card__content {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .l-card__img-layout {
+    height: 120px;
+  }
+  .l-card__text {
+    display: block;
+  }
+}
 .c-btn {
   display: block;
   margin: auto;
@@ -166,7 +223,7 @@ h4:18px
   content: "";
   display: inline-block;
   width: 6px;
-  height: 36px;
+  height: 26px;
   background-color: #3d3d3d;
   margin-right: 8px;
   vertical-align: bottom;
@@ -177,6 +234,11 @@ h4:18px
     width: 8px;
   }
 }
+.c-date {
+  color: #3d3d3d;
+  font-size: 12px;
+}
+
 .u-img__cover img {
   height: 100%;
   width: 100%;
@@ -194,6 +256,20 @@ h4:18px
   max-width: 1152px;
   margin: 0 auto;
   width: 90%;
+}
+
+.page-numbers {
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+.page-numbers li *.page-numbers {
+  padding: 4px 8px;
+  background: #eee;
+}
+.page-numbers li *.current {
+  color: #fff;
+  background-color: #3d3d3d;
 }
 
 .p-sb-prof__img-layout {
@@ -214,39 +290,61 @@ h4:18px
 }
 .top-page .p-fv__title {
   letter-spacing: 0.05em;
+  margin-top: -66px;
+  margin-left: -92.07px;
   top: 50%;
-  margin-top: -84px;
   left: 50%;
-  margin-left: -117.19px;
 }
 
 @media screen and (min-width: 768px) {
   .top-page .p-fv__img-layout {
-    height: 80vh;
+    height: 48vh;
   }
   .top-page .p-fv__title {
-    margin-top: -54px;
-    margin-left: -150.665px;
+    font-size: 24px;
+    margin-top: -36px;
+    margin-left: -100.45px;
   }
 }
+.p-newpost__item {
+  width: 48%;
+}
+.p-newpost__item:first-child {
+  width: 100%;
+}
+.p-newpost__item:first-child .p-newpost__img-layout {
+  height: 180px;
+}
+.p-newpost__item:first-child .p-newpost__description {
+  display: block;
+  font-size: 14px;
+}
 .p-newpost__img-layout {
-  height: 200px;
+  height: 92px;
+}
+.p-newpost__description {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
+  .p-newpost__item:first-child .p-newpost__img-layout {
+    height: 200px;
+  }
   .p-newpost__img-layout {
-    height: 180px;
-    width: 40%;
+    height: 100px;
+    width: 50%;
   }
   .p-newpost__content {
-    width: 60%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .p-newpost__img-layout {
+    height: 120px;
   }
 }
 .p-taxonomy__items {
   gap: 40px 0;
-}
-.p-taxonomy__item {
-  width: 48%;
 }
 .p-taxonomy-img__layout {
   height: 92px;
@@ -257,10 +355,6 @@ h4:18px
   width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-taxonomy__date {
-  font-size: 12px;
-  color: #5c5c5c;
 }
 
 @media screen and (min-width: 768px) {

@@ -8,7 +8,7 @@
 ?>
 
 <section class="mt-10">
-  <h2 class="bg-primary text-white p-2">記事カテゴリ一覧</h2>
+  <h3 class="bg-primary text-white p-2">記事カテゴリ一覧</h3>
   <ul class="p-0 mt-4 d-flex flex-column gap-3">
 
 <?php

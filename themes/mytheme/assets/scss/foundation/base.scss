@@ -1,5 +1,6 @@
 body {
   color: $body_black;
+  font-family: "遊ゴシック", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 ul {
@@ -29,6 +30,23 @@ html {
   h3 { font-size: 16px; }
 
   h4 { font-size: 15px; }
+}
+
+@include mq(md) {
+  html {
+    h1 { font-size: 18px; }
+    h2 { font-size: 16px; }
+    h3 { font-size: 15px; }
+    h4 { font-size: 14px; }
+  }
+}
+@include mq(lg) {
+  html {
+    h1 { font-size: 22px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+  }
 }
 
 // @include mq(md) {

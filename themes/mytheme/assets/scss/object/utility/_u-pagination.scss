@@ -1,0 +1,23 @@
+// ページネーションに関するCSS
+// ページネーションはthe_posts_pagination関数で実装
+
+.page-numbers {
+  padding: 0;
+  display: flex;
+  gap: 16px;
+
+  & li {
+
+    & *.page-numbers {
+      padding: 4px 8px;
+      background: $gray4;
+    }
+
+    & *.current {
+      color: $white;
+      background-color: $body_black;
+    }
+
+  }
+
+}
