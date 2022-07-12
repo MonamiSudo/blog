@@ -10,6 +10,9 @@ body {
   color: #3d3d3d;
   font-family: "遊ゴシック", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
+body.activeFixed {
+  overflow: hidden;
+}
 
 ul {
   list-style: none !important;
@@ -103,26 +106,42 @@ html h4, html .h4 {
 }
 .l-header-sp__line {
   background-color: #fff;
+  box-shadow: 1px 1px 4px #ccc;
   height: 48px;
   width: 60px;
+  transition: all 0.4s;
   position: absolute;
   right: 0;
 }
-.l-header-sp__line-element::before {
+.l-header-sp__line.active {
+  box-shadow: none;
+}
+.l-header-sp__line-element {
   background: #000;
-  content: "";
   display: block;
   height: 2px;
   width: 32px;
+  transition: 0.4s;
   position: absolute;
   top: 12px;
   left: 15px;
 }
-.l-header-sp__line-element.line2::before {
+.l-header-sp__line-element.line1.active {
+  transform: rotate(45deg);
   top: 22px;
 }
-.l-header-sp__line-element.line3::before {
+.l-header-sp__line-element.line2 {
+  top: 22px;
+}
+.l-header-sp__line-element.line2.active {
+  display: none;
+}
+.l-header-sp__line-element.line3 {
   top: 32px;
+}
+.l-header-sp__line-element.line3.active {
+  transform: rotate(-45deg);
+  top: 22px;
 }
 .l-header-sp__menus {
   display: none;
@@ -130,6 +149,9 @@ html h4, html .h4 {
   height: 100vh;
   width: 100%;
   z-index: 9999;
+}
+.l-header-sp__menus.active {
+  display: block;
 }
 .l-header-sp__items {
   padding-left: 0;
@@ -207,16 +229,12 @@ html h4, html .h4 {
 
 @media screen and (min-width: 768px) {
   .l-card__img-layout {
-    width: 50%;
-    height: 100px;
-  }
-  .l-card__content {
-    width: 50%;
+    height: 180px;
   }
 }
 @media screen and (min-width: 992px) {
   .l-card__img-layout {
-    height: 120px;
+    height: 180px;
   }
   .l-card__text {
     display: block;
@@ -300,6 +318,13 @@ html h4, html .h4 {
 .page-numbers li *.current {
   color: #fff;
   background-color: #3d3d3d;
+}
+
+.u-ls-05 {
+  letter-spacing: 0.05em;
+}
+.u-ls-1 {
+  letter-spacing: 0.1em;
 }
 
 .p-sb-prof__img-layout {

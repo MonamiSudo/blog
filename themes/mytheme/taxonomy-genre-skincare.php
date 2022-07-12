@@ -18,7 +18,7 @@
 
           <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <li class="l-card__item">
-              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column flex-md-row gap-md-3">
+              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column gap-md-3">
                 <figure class="l-card__img-layout u-img__cover m-0">
                   <?= the_post_thumbnail(); ?>
                 </figure>

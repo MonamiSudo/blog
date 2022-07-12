@@ -8,34 +8,50 @@
 
   &__line {
     background-color: $white;
+    box-shadow: 1px 1px 4px $gray2;
     height: 48px;
     width: 60px;
+    transition: all .4s;
     position: absolute;
     right: 0;
 
+    &.active {
+      box-shadow: none;
+    }
+
     &-element {
 
-      &::before {
-        background: #000;
-        content: "";
-        display: block;
-        height: 2px;
-        width: 32px;
-        position: absolute;
-        top: 12px;
-        left: 15px;
+      background: $black;
+      display: block;
+      height: 2px;
+      width: 32px;
+      transition: .4s;
+      position: absolute;
+      top: 12px;
+      left: 15px;
+
+      &.line1.active {
+        transform: rotate(45deg);
+        top: 22px;
       }
 
       &.line2 {
-        &::before {
-          top: 22px;
+        top: 22px;
+
+        &.active {
+          display: none;
         }
+
       }
 
       &.line3 {
-        &::before {
-          top: 32px;
+        top: 32px;
+
+        &.active {
+          transform: rotate(-45deg);
+          top: 22px;
         }
+
       }
 
     }
@@ -49,6 +65,11 @@
     height: 100vh;
     width: 100%;
     z-index: 9999;
+
+    &.active {
+      display: block;
+    }
+
   }
 
   &__items {

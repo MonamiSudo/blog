@@ -56,7 +56,7 @@
 
             <?php endwhile; endif; ?>
           </ul>
-          <a href="<?= home_url('/blog/'); ?>" class="c-btn btn-secondary p-3">他の新着記事をみる</a>
+          <a href="<?= home_url('/blog/'); ?>" class="c-btn btn-secondary p-3">記事一覧をみる</a>
         </section>
 
         <section class="p-pickup pt-15 pb-lg-15">
@@ -82,7 +82,7 @@
             ?>
 
             <li class="l-card__item ">
-              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column flex-md-row gap-md-3">
+              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column gap-md-3">
                 <figure class="l-card__img-layout u-img__cover mb-0">
                   <?php the_post_thumbnail(); ?>
                 </figure>
