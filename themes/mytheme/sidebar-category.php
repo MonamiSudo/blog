@@ -16,7 +16,8 @@
 
   $args = array(
     'post_type' => $post_type,
-    'order' => 'ASC',
+    'orderby' => 'ID',
+    'order' => 'DESC',
     'tax_auery' => array(
       array(
         'taxonomy' => $taxonomy,

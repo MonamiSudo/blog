@@ -6,7 +6,15 @@
   
   <?php 
     $uri = rtrim($_SERVER["REQUEST_URI"], '/');
-    $uri = substr($uri, strrpos($uri, '/') + 1); // URL末尾のパス（ターム）を取得
+    $uri_path = substr($uri, strrpos($uri, '/') + 1); // URL末尾のパス（ターム）を取得
+
+    $terms = get_terms('genre');
+    // var_dump($terms);
+    // foreach( $terms as $term ) {
+    //   var_dump($term->slug);
+    //   var_dump($term->name);
+    //   echo '<hr>';
+    // }
 
     $args = array(
       'post_type' => 'blog',
@@ -16,7 +24,7 @@
         array(
           'taxonomy' => 'genre',
           'field'    => 'slug',
-          'terms'    => $uri,
+          'terms'    => $uri_path,
         )
       )
     );
@@ -33,12 +41,14 @@
         <div class="col-12 col-lg-8">
 
         <section class="pt-15 pt-lg-30">
-          <h1 class="mb-0">スキンケア</h1>
+          <?php foreach( $terms as $term ): if( $term->slug === $uri_path ) : ?>
+            <h1 class="mb-0"><?= $term->name; ?></h1>
+          <?php endif; endforeach; ?>
           <ul class="p-taxonomy__items p-0 mt-6 gap-3 d-flex flex-wrap justify-content-between mt-md-10 gap-md-6">
 
           <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
             <li class="l-card__item">
-              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column flex-md-row gap-md-3">
+              <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column gap-md-3">
                 <figure class="l-card__img-layout u-img__cover m-0">
                   <?= the_post_thumbnail(); ?>
                 </figure>
