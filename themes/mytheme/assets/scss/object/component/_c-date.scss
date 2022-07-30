@@ -3,4 +3,19 @@
   color: $body_black;
   font-size: 12px;
 
+  &__clock {
+    width: 14px;
+  }
+
+  &__folder {
+    height: 20px;
+    width: 18px;
+  }
+
+  &__category {
+    border-radius: 4px;
+    font-size: 12px;
+    width: max-content;
+  }
+
 }

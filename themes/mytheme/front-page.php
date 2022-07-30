@@ -30,6 +30,7 @@
           <ul class="l-card__items p-0 mt-6 mb-7 gap-3 d-flex flex-wrap justify-content-between gap-md-6 mb-md-15">
 
             <?php 
+
               $args = array(
                 'post_type' => $post_type,
                 'order' => 'ASC',
@@ -37,8 +38,11 @@
               );
             
               $query = new WP_Query($args);
+
+              // var_dump($query);
             
               if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+
             ?>
 
             <li class="mb-0 p-newpost__item">
@@ -49,7 +53,12 @@
                 <div class="p-newpost__content mt-2 mt-md-0">
                   <h3 class="mb-0 fw-bold lh-base"><?php the_title(); ?></h3>
                   <p class="p-newpost__description mt-1 mb-0"><?= wp_trim_words( get_the_content(), 40, '....【続きを読む】' ); ?></p>
-                  <p class="c-date mt-1 mb-0"><?= get_the_date(); ?></p>
+                  <?php include( TEMPLATEPATH . '/components/date.php' ); ?>
+                  <!-- <div class="d-flex mt-1 gap-1 align-items-center">
+                    <img class="c-date__folder" src="<?= $img_path ?>/icon/folder.png" alt="フォルダ">
+                    <p class="c-date__category mb-0"><?= $term->name; ?></p>
+                  </div> -->
+                  <!-- <p class="c-date__category mb-0 mt-1 p-1 bg-light text-white"><?= $term->name; ?></p> -->
                 </div>
               </a>
             </li>
@@ -88,7 +97,7 @@
                 </figure>
                 <div class="l-card__content mt-2 mt-md-0">
                   <h3 class="mb-0 fw-bold lh-base"><?php the_title(); ?></h3>
-                  <p class="c-date mb-0"><?= get_the_date(); ?></p>
+                  <?php include( TEMPLATEPATH . '/components/date.php' ); ?>
                 </div>
               </a>
             </li>

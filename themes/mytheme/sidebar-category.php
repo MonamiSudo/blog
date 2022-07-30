@@ -30,10 +30,10 @@
     <?php if( $term->count !== 0 ) : ?>
     <li>
       <a class="d-flex align-items-center gap-2" href="<?= home_url('/' . $term->slug); ?>">
-        <figure class="p-sb-category__folder u-img__cover mr-3 my-auto">
-          <img src="<?= $img_path ?>/icon/folder.png" alt="フォルダのアイコン">
+        <figure class="p-sb-category__folder u-img__cover my-auto">
+          <img src="<?= $img_path ?>/icon/folder.svg" alt="フォルダのアイコン">
         </figure>
-        <p class="mb-0"><?= $term->name ?>（<?= $term->count ?>）</p>
+        <p class="mb-0 mx-1"><?= $term->name ?>（<?= $term->count ?>）</p>
       </a>
     </li>
     <?php endif; ?>

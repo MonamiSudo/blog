@@ -286,6 +286,20 @@ html h4, html .h4 {
   color: #3d3d3d;
   font-size: 12px;
 }
+.c-date__clock {
+  width: 14px;
+}
+.c-date__folder {
+  height: 20px;
+  width: 18px;
+}
+.c-date__category {
+  border-radius: 4px;
+  font-size: 12px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 
 .u-img__cover img {
   height: 100%;
@@ -333,7 +347,7 @@ html h4, html .h4 {
 }
 
 .p-sb-category__folder {
-  height: 28px;
+  height: 23px;
 }
 
 .top-page .p-fv__img-layout {
