@@ -13,5 +13,6 @@
   <small class="d-block bg-primary py-1 text-center ">© 2022 Kinuo Blog.</small>
 </footer>
 
-<script src="<?= $theme_path ?>/assets/dist/main.js"></script>
+<!-- <script src="<?= $theme_path ?>/assets/dist/main.js"></script> -->
+<script src="//kinuoblog.com/wp-content/themes/mytheme/assets/dist/main.js"></script>
 <?php wp_footer(); ?>

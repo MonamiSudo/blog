@@ -23,7 +23,7 @@
 
     <div class="row justify-content-between">
 
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-lg-8">
 
         <section class="p-newpost pt-15">
           <h1 class="c-heading__section mb-0">新着記事</h1>

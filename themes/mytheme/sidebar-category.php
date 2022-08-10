@@ -9,9 +9,21 @@
 
 <section class="mt-10">
   <h3 class="bg-primary text-white p-2">記事カテゴリ一覧</h3>
-  <ul class="p-0 mt-4 d-flex flex-column gap-3">
 
-<?php
+  <?php 
+    $args = array(
+      'theme_location' => 'category',
+      'container_class' => 'l-category__nav',
+      'container' => 'nav',
+      'menu_class' => 'l-category__items',
+    );
+    
+    wp_nav_menu($args);
+  ?>
+
+  <!-- <ul class="p-0 mt-4 d-flex flex-column gap-3"> -->
+
+<!-- <?php
   foreach( $terms as $term ) :
 
   $args = array(
@@ -40,7 +52,7 @@
 
 <?php
   endforeach;
-?>
+?> -->
 
-  </ul>
+  <!-- </ul> -->
 </section>
