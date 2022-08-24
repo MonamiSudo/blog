@@ -47,7 +47,7 @@
 
             <li class="mb-0 p-newpost__item">
               <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column flex-md-row justify-content-md-between gap-md-3">
-                <figure class="u-img__cover p-newpost__img-layout mb-0">
+                <figure class="u-img__contain p-newpost__img-layout mb-0">
                   <?php the_post_thumbnail(); ?>
                 </figure>
                 <div class="p-newpost__content mt-2 mt-md-0">
@@ -92,7 +92,7 @@
 
             <li class="l-card__item ">
               <a href="<?= the_permalink(); ?>" class="text-decoration-none d-flex flex-column gap-md-3">
-                <figure class="l-card__img-layout u-img__cover mb-0">
+                <figure class="l-card__img-layout u-img__contain mb-0">
                   <?php the_post_thumbnail(); ?>
                 </figure>
                 <div class="l-card__content mt-2 mt-md-0">
