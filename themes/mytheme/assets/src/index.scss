@@ -13,6 +13,7 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 @import "../scss/layout/l-footer";
 @import "../scss/layout/l-category";
 @import "../scss/layout/l-card";
+@import "../scss/layout/main";
 
 // @import "../scss/object/project/component/";
 @import "../scss/object/component/c-btn";
@@ -38,6 +39,9 @@ Bootstrap の変数は node_modules/bootstrap/scss/_variables.scss を参照
 
 // taxonomy
 @import "../scss/object/project/taxonomy/p-taxonomy";
+
+
+@import "../scss/object/project/profile";
 
 /* Bootstrap の Sass を読み込む */
 @import "~bootstrap/scss/bootstrap.scss";

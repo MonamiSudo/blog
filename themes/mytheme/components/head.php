@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- スタイルの読み込み  -->
   <!-- <link rel="stylesheet" href="<?= $theme_path ?>/assets/dist/style.css"> -->
-  <link rel="stylesheet" href="//kinuoblog.com/wp-content/themes/mytheme/assets/dist/style.css?ver=20220824">
+  <link rel="stylesheet" href="<?= $theme_path ?>/assets/dist/style.css?ver=20221002">
   <!-- favicon -->
   <!-- <link rel="icon" href="<?= $theme_path ?>/favicon.ico"> -->
   <link rel="icon" href="//kinuoblog.com/wp-content/themes/mytheme/favicon.ico">

@@ -1,0 +1,17 @@
+.l-main {
+
+  background-color: $white;
+  padding-top: 80px;
+
+}
+
+@include mq(md) {
+
+  .l-main {
+
+    background-color: $white_dark;
+    padding-top: 140px;
+
+  }
+
+}

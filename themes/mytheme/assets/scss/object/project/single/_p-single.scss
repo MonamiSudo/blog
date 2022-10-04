@@ -17,16 +17,42 @@
   }
 
   &__container {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
+    line-height: 1.75;
 
     & p,
       h1,
       h2,
       h3,
       h4 {
+        color: $body_black;
         margin-bottom: 0;
       }
+    
+    & li {
+      list-style: initial;
+    }
 
+  }
+
+  &__heading-h2 {
+    background: $accent;
+    font-weight: bold;
+    padding: 16px 12px;
+    letter-spacing: .05em;
+  }
+
+  &__heading-h3 {
+    border-bottom: 2px solid $accent;
+    color: $body_black;
+    font-weight: bold;
+    letter-spacing: .05em;
+    padding: 12px 12px 8px 12px;
+  }
+
+  &__heading-h4 {
+    font-weight: bold;
+    padding: 8px 0 8px 12px;
   }
 
 }
